@@ -30,7 +30,7 @@ int main()
     if (user_input == 0)
     {
       int random_number = (std::rand() % 6) + 1;  // random numbers between 1 and 6
-      std::cout << "You rolled a " << random_number << std::endl;
+      std::cout << "You rolled a " << random_number << std::endl << std::endl;
     }
     else
     {
@@ -38,16 +38,25 @@ int main()
       {
         std::cout << "Enter two numbers\n";
         std::cin >> num1 >> num2;
-        std::cout << "Their sum is " << (num1 + num2) << std::endl;
+        std::cout << "Their sum is " << (num1 + num2) << std::endl << std::endl;
       }
-    }
-    else
-    {
-      if (user_input == 2)
+      else
       {
+        if (user_input == 2)
+        {
         std::cout << "Enter two numbers" << std::endl;
         std::cin >> num1 >> num2;
-        std::cout << "Their difference is" << (num1 - num2) << std::endl;
+        std::cout << "Their difference is " << (num1 - num2) << std::endl << std::endl;
+        }
+        else
+        {
+          if (user_input == 3)
+          {
+            std::cout << "Enter two numbers" << std::endl;
+            std::cin << num1 >> num2;
+            std::cout << "Their product is " << (num1 * num2) << std::endl << std::endl;
+          }
+        }
       }
     }
   }
