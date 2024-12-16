@@ -53,8 +53,24 @@ int main()
           if (user_input == 3)
           {
             std::cout << "Enter two numbers" << std::endl;
-            std::cin << num1 >> num2;
+            std::cin >> num1 >> num2;
             std::cout << "Their product is " << (num1 * num2) << std::endl << std::endl;
+          }
+          else
+          {
+            if (user_input == 4)
+            {
+              std::cout << "Enter two numbers" << std::endl;
+              std::cin >> numerator >> denominator;
+              if (denominator == 0)
+              {
+                std::cout << "DIVIDE BY 0 ERROR" << std::endl;
+              }
+              else
+              { 
+                std::cout << "Their quotient is " << (numerator / denominator) << std::endl << std::endl;
+              }
+            }
           }
         }
       }
